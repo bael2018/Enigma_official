@@ -2444,6 +2444,10 @@ footer{
         text-align: center;
         margin: 0 auto;
     }
+
+    .block2_inner{
+        padding-top: 25px;
+    }
 }
 
 @media screen and (max-width:470px){
@@ -2493,7 +2497,7 @@ footer{
     }
 
     .sub{
-        margin-left: 30%;
+        margin-left: 27%;
     }
 }
 
@@ -2563,6 +2567,10 @@ footer{
 
     .figure6{
         display: none !important;
+    }
+
+    .sub{
+        margin-left: 25%;
     }
 }
 
