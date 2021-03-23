@@ -1651,6 +1651,10 @@ header::before{
         text-decoration: none !important;
     }
 
+    .appear_banner div span a:nth-child(1){
+        color: #FECC09;
+    }
+
     .appear_banner div span{
         margin: 0px 60px;
     }
@@ -1800,6 +1804,10 @@ header::before{
 }
 
 @media screen and (max-width:600px){
+
+    header{
+        background: url('../img/group-of-people-working-out-business-plan-in-an-office-min.jpg') center / cover fixed;
+    }
 
     .wave{
         top: -35px;
