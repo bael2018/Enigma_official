@@ -915,12 +915,12 @@ header::before{
 /* footer */
 
 
-/* footer{
+footer{
     width: 100%;
     background: #000;
     padding-top: 100px;
     padding-bottom: 50px;
-} */
+}
 
 /* footer_container */
 
@@ -2109,5 +2109,144 @@ header::before{
 
     .header_upper h1{
         font-size: 28px;
+    }
+}
+
+
+
+/* footer */
+
+
+
+@media screen and (max-width:1150px){
+
+    .footer_container{
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .footer_inner{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+
+    .footer_inner2,
+    .footer_inner3{
+        padding-left: 0px;
+    }
+
+    .ins_block_inner{
+        height: 75px;
+    }
+
+    .footer_inner3 ul li{
+        margin-bottom: 15px;
+    }
+
+    .footer_inner3 ul li a{
+        font-size: 18px;
+    }
+    
+    .footer_inner2 span p{
+        width: 100%;
+    }
+
+    .footer_inner2 span{
+        margin-bottom: 30px;
+    }
+    
+    .footer_inner2 span p a{
+        font-size: 20px;
+    }
+
+    .footer_inner2 span i{
+        margin-top: 4px;
+    }
+
+    .footer_link a{
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width:830px){
+
+    .footer_inner{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:750px){
+
+    .footer_end{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    .footer_inner{
+        width: 90%;
+        text-align: center;
+    }
+
+    .footer_inner4{
+        width: 80%;
+    }
+
+    .ins_block_inner{
+        height: 100px;
+    }
+
+    .footer_link{
+        width: 100%;
+        display: flex;
+        margin-top: 45px;
+        justify-content: center;
+    }
+
+    .footer_inner2 span i{
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px){
+
+    .ins_block_inner{
+        height: 80px;
+    }
+}
+
+@media screen and (max-width:520px){
+
+    .footer_end p:nth-child(1){
+        width: 70%;
+        text-align: center;
+        line-height: 1.8;
+    }
+}
+
+@media screen and (max-width:490px){
+
+    footer{
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width:430px){
+
+    .footer_inner4{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:390px){
+
+    .ins_block_inner{
+        height: 70px;
     }
 }
