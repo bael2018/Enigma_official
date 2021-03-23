@@ -1104,6 +1104,28 @@ footer{
 
 /* header */
 
+@media screen and (max-width:1550px){
+
+    .header_link{
+        top: -45%;
+    }
+}
+
+@media screen and (max-width:1500px){
+
+    .header_link{
+        top: -42%;
+    }
+}
+
+@media screen and (max-width:1380px){
+
+    .header_link{
+        top: -40%;
+    }
+}
+
+
 @media screen and (max-width:1310px){
 
     .header_link{
@@ -1500,12 +1522,12 @@ footer{
     
     .toggle2,
     .burger_block{
-        position: absolute;
+        position: fixed;
         height: 47px;
         width: 47px;
         right: 50px;
         outline: none;
-        z-index: 1034;
+        z-index: 1045;
         top: 22px;
         cursor: pointer;
     }
@@ -1567,12 +1589,12 @@ footer{
 
     .appear_block{
         height: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         background: #111111;
         right: -100%;
         transition: .5s;
-        z-index: 100;
+        z-index: 545;
         width: 100%;
     }
 
