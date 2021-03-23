@@ -205,6 +205,7 @@ header::before{
     left: 7.5%;
     width: 85%;
     display: flex;
+    overflow: hidden;
     align-items: center;
     justify-content: space-between;
 }
@@ -1532,6 +1533,10 @@ footer{
         cursor: pointer;
     }
 
+    .toggle2:checked{
+        position: fixed;
+    }
+
     .toggle2{
         opacity: 0;
         z-index: 10002;
@@ -1566,6 +1571,7 @@ footer{
 
     .toggle2:checked ~ .appear_block{
         right: 0;
+        position: fixed;
     }
 
     .toggle2:checked ~ .burger_block .stick2{
@@ -1585,6 +1591,7 @@ footer{
 
     .toggle2:checked ~ .burger_block{
         background: #FECC09;
+        position: fixed;
     }
 
     .appear_block{
@@ -1593,6 +1600,7 @@ footer{
         top: 0;
         background: #111111;
         right: -100%;
+        overflow: hidden;
         transition: .5s;
         z-index: 545;
         width: 100%;
