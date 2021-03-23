@@ -2393,8 +2393,13 @@ footer{
         border-radius: 50px;
     }
 
+    .hidden1{
+        margin-top: 20px;
+    }
+
     .hidden2{
         display: block !important;
+        margin-top: 20px;
     }
 
     .block3_card{
