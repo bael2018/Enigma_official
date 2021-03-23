@@ -1522,7 +1522,7 @@ footer{
     
     .toggle2,
     .burger_block{
-        position: fixed;
+        position: absolute;
         height: 47px;
         width: 47px;
         right: 50px;
@@ -1589,7 +1589,7 @@ footer{
 
     .appear_block{
         height: 100%;
-        position: fixed;
+        position: absolute;
         top: 0;
         background: #111111;
         right: -100%;
