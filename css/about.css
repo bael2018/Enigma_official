@@ -467,6 +467,7 @@ main{
     margin: 0 auto;
     padding-top: 80px;
     width: 80%;
+    overflow: hidden;
 }
 
 .main_block1_ins h1{
