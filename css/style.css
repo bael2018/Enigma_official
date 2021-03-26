@@ -109,10 +109,10 @@ header::before{
 .phone{
     position: absolute;
     left: 12%;
-    top: 14%;
+    top: -30% !important;
     z-index: 100;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: all;
     transition: .3s;
     letter-spacing: 2px;
 }
@@ -130,8 +130,8 @@ header::before{
 
 .check:checked ~ .phone{
     top: 16%;
-    pointer-events: all;
-    opacity: 1;
+    pointer-events: none;
+    opacity: 0;
     left: 15%;
     font-size: 18px;
 }
@@ -143,8 +143,8 @@ header::before{
     right: 17%;
     top: 16%;
     z-index: 100;
-    pointer-events: none;
-    opacity: 0;
+    pointer-events: all;
+    opacity: 1;
     transition: .3s;
     letter-spacing: 2px;
     color: white;
@@ -169,8 +169,8 @@ header::before{
 .check:checked ~ .lang{
     top: 19%;
     right: 20%;
-    pointer-events: all;
-    opacity: 1;
+    pointer-events: none;
+    opacity: 0;
     font-size: 18px;
 }
 
@@ -545,6 +545,7 @@ header::before{
 .block1_picture img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 /* block1_content */
@@ -1175,6 +1176,18 @@ footer{
 
     .header_link{
         top: -40%;
+    }
+
+    .lang{
+        top: 17% !important;
+    }
+    
+    .phone{
+        top: 15% !important;
+    }
+
+    .wave{
+        top: -130px;
     }
 }
 
@@ -1817,13 +1830,13 @@ footer{
 @media screen and (max-width:700px){
 
     .header_link{
-        top: -28%;
+        top: -24%;
     }
 
     .toggle2,
     .burger_block{
         right: 50px;
-        top: 15px;
+        top: 20px;
         height: 45px;
         width: 45px;
     }
@@ -1840,7 +1853,7 @@ footer{
     }
 
     .header_container{
-        top: -10%;
+        top: -0%;
     }
 
     .header_upper h1:nth-child(2){
@@ -1853,18 +1866,23 @@ footer{
         border-radius: 10px;
         font-size: 18px;
         width: 28%;
+        top: 7%;
     }
 
     header{
-        height: 500px;
+        height: 580px;
+    }
+
+    .wave2{
+        top: 30px;
     }
 
     .wave{
-        top: -40px;
+        top: -30px;
     }
 
     .appear_banner{
-        top: 18%;
+        top: 23%;
     }
 
     .appear_banner div{
@@ -1875,11 +1893,11 @@ footer{
 @media screen and (max-width:640px){
 
     .wave{
-        top: -35px;
+        top: -30px;
     }
 
     .header_link{
-        top: -26%;
+        top: -23%;
     }
 
     .toggle2,
@@ -1889,7 +1907,7 @@ footer{
     }
 
     .wave2{
-        top: 10px;
+        top: 20px;
     }
 }
 
@@ -1900,11 +1918,11 @@ footer{
     }
 
     .wave{
-        top: -35px;
+        top: -20px;
     }
 
     .header_link{
-        top: -25%;
+        top: -21%;
     }
 
     .toggle2,
@@ -1914,7 +1932,7 @@ footer{
     }
 
     .wave2{
-        top: 10px;
+        top: 20px;
     }
 
     .header_button{
@@ -1935,16 +1953,16 @@ footer{
 @media screen and (max-width:550px){
 
     .header_container{
-        top: -8%;
+        top: 0%;
         left: 7%;
     }
 
     .wave{
-        top: -25px;
+        top: -20px;
     }
 
     .header_link{
-        top: -23%;
+        top: -19%;
     }
     
     .header_upper h1{
@@ -1963,7 +1981,7 @@ footer{
     }
 
     .header_container{
-        top: -3%;
+        top: 2%;
         left: 7%;
     }
 
@@ -1972,11 +1990,11 @@ footer{
     }
 
     .wave2{
-        top: 15px;
+        top: 20px;
     }
 
     .header_link{
-        top: -21%;
+        top: -18%;
     }
     
     .header_upper h1{
@@ -1987,7 +2005,7 @@ footer{
         left: 32.5%;
         font-size: 17px;
         width: 35%;
-        top: 1%;
+        top: 7%;
         height: 50px;
     }
 
@@ -2000,16 +2018,16 @@ footer{
 @media screen and (max-width:480px){
 
     .header_container{
-        top: -3%;
+        top: 3%;
         left: 7%;
     }
 
     .wave{
-        top: -19px;
+        top: -15px;
     }
 
     .wave2{
-        top: 20px;
+        top: 30px;
     }
 
     .header_upper h1{
@@ -2020,18 +2038,22 @@ footer{
         font-size: 16px;
         line-height: 1.5;
     }
+
+    .header_link{
+        top: -17%;
+    }
 }
 
 @media screen and (max-width:455px){
 
     .header_container{
-        top: -3%;
+        top: 5%;
         width: 90%;
         left: 5%;
     }
 
     .wave{
-        top: -10px;
+        top: -5px;
     }
     
     header::after{
@@ -2045,28 +2067,28 @@ footer{
     }
 
     .wave2{
-        top: 30px;
+        top: 40px;
     }
 
     .header_link{
-        top: -19%;
+        top: -16%;
     }
 }
 
 @media screen and (max-width:430px){
 
     .header_container{
-        top: -3%;
+        top: 4%;
         width: 90%;
         left: 5%;
     }
 
     .wave{
-        top: -5px;
+        top: 0px;
     }
     
     .header_link{
-        top: -17.5%;
+        top: -15%;
     }
 
     .header_upper h1{
@@ -2083,7 +2105,7 @@ footer{
 @media screen and (max-width:410px){
 
     .header_container{
-        top: -5%;
+        top: 5%;
         width: 90%;
         left: 5%;
     }
@@ -2093,7 +2115,7 @@ footer{
     }
 
     .header_link{
-        top: -16%;
+        top: -14%;
     }
 
     .header_upper h1{
@@ -2114,7 +2136,7 @@ footer{
     .header_button{
         left: 25%;
         width: 50%;
-        top: -3%;
+        top: 8%;
         height: 45px;
         font-size: 17px;
     }
@@ -2154,7 +2176,15 @@ footer{
 @media screen and (max-width:380px){
 
     .header_link{
-        top: -15.5%;
+        top: -12%;
+    }
+
+    .wave{
+        top: 10px;
+    }
+
+    .wave2{
+        top: 40px;
     }
 
     .header_upper h1{
@@ -2178,7 +2208,11 @@ footer{
     }
 
     .wave{
-        top: 10px;
+        top: 15px;
+    }
+
+    .wave2{
+        top: 40px;
     }
 
     .toggle2,
@@ -2187,7 +2221,7 @@ footer{
     }
 
     .header_link{
-        top: -14%;
+        top: -12%;
     }
 
     .header_upper h1{
@@ -2199,6 +2233,13 @@ footer{
 
     .header_upper h1{
         font-size: 28px;
+    }
+}
+
+@media screen and (max-width:330px){
+
+    .header_link{
+        top: -11%;
     }
 }
 

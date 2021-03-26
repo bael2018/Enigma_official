@@ -107,8 +107,8 @@ header{
     left: 12%;
     top: 14%;
     z-index: 100;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: all;
     transition: .3s;
     letter-spacing: 2px;
 }
@@ -126,8 +126,8 @@ header{
 
 .check:checked ~ .phone{
     top: 16%;
-    pointer-events: all;
-    opacity: 1;
+    pointer-events: none;
+    opacity: 0;
     left: 15%;
     font-size: 18px;
 }
@@ -139,8 +139,8 @@ header{
     right: 17%;
     top: 16%;
     z-index: 100;
-    pointer-events: none;
-    opacity: 0;
+    pointer-events: all;
+    opacity: 1;
     transition: .3s;
     letter-spacing: 2px;
     color: white;
@@ -165,8 +165,8 @@ header{
 .check:checked ~ .lang{
     top: 19%;
     right: 20%;
-    pointer-events: all;
-    opacity: 1;
+    pointer-events: none;
+    opacity: 0;
     font-size: 18px;
 }
 
@@ -873,12 +873,36 @@ footer{
     .header_link{
         top: -42%;
     }
+
+    .wave{
+        top: -130px;
+    }
+
+    .lang{
+        top: 20% !important;
+    }
+
+    .phone{
+        top: 19% !important;
+    }
 }
 
 @media screen and (max-width:1380px){
 
     .header_link{
         top: -40%;
+    }
+
+    .wave{
+        top: -125px;
+    }
+
+    .lang{
+        top: 18% !important;
+    }
+
+    .phone{
+        top: 17% !important;
     }
 }
 
@@ -1571,7 +1595,7 @@ footer{
     }
 
     .appear_banner{
-        top: 18%;
+        top: 23%;
     }
 
     .appear_banner div{
